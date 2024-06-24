@@ -1,0 +1,92 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 0;
+}
+
+fieldset#payment-method {
+  flex-direction: row;
+  gap: 2px;
+}
+
+fieldset#payment-method ul {
+  list-style-type: none;
+}
+
+fieldset#payment-method legend {
+  margin-bottom: 0em;
+}
+
+fieldset#action {
+  width: 20%;
+}
+
+legend {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+input {
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+select {
+  min-height: 2.5em;
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.form-group {
+  display: flex;
+  gap: 2em;
+}
+
+input#email {
+  width: 25em;
+}
+
+input#cep {
+  width: 15em;
+}
+
+select#product {
+  width: 25em;
+}
+
+button {
+  font-size: large;
+  font-weight: bold;
+  border-radius: 2em;
+  color: white;
+  background-color: red;
+  padding: 1em;
+  border: 0;
+}
+
+button[type=submit] {
+  background-color: green;
+  color: white;
+}
