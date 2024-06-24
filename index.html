@@ -4,11 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/form.css">
   <title>Jitterbit</title>
 </head>
 
 <body>
 </body>
+<form>
+  <fieldset id="client-info">
+    <legend>Informações do Cliente</legend>
+
+    <label for="name">Nome Completo</label>
+    <input id="name" name="name" type="text" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="phone">Telefone</label>
+    <input id="phone" name="phone" type="text" required>
+  </fieldset>
+
+  <fieldset id="delivery-address">
+    <legend>Endereço de Entrega</legend>
+
+    <label for="address">Rua e Número</label>
+    <input id="address" name="address" type="text" required>
+
+    <label for="complement">Complemento</label>
+    <input id="complement" name="complement" type="text">
+
+    <label for="neighborhood">Bairro</label>
+    <input id="neighborhood" name="neighborhood" type="text" required>
+
+    <label for="city">Cidade</label>
+    <input id="city" name="city" type="text" required>
+
+    <label for="state">Estado</label>
+    <input id="state" name="state" type="text" required>
+
+    <label for="cep">CEP</label>
+    <input id="cep" name="cep" type="text" required>
+  </fieldset>
+
+  <fieldset id="product-info">
+    <legend>Informações do Pedido</legend>
+
+    <label for="productId">Id Produto</label>
+    <select name="productId" id="product" required>
+      <option value="0" disabled selected>Selecione um produto</option>
+    </select>
+
+    <label for="quantity">Quantidade</label>
+    <input id="quantity" name="quantity" type="text" required>
+
+    <label for="quantity">Quantidade</label>
+    <input id="quantity" name="quantity" type="text" required>
+
+    <fieldset id="payment-method">
+      <legend>Método de Pagamento</legend>
+
+      <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" />
+      <label for="creditCard">Cartão de Crédito</label>
+
+      <input type="radio" id="boleto" name="paymentMethod" value="boleto" />
+      <label for="boleto">Boleto Bancário</label>
+
+      <input type="radio" id="payPal" name="paymentMethod" value="payPal" />
+      <label for="payPal">PayPal</label>
+    </fieldset>
+  </fieldset>
+
+  <fieldset>
+    <button type="submit">Enviar Pedido</button>
+    <button>Limpar Formulário</button>
+  </fieldset>
+</form>
 
 </html>
